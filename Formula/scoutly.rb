@@ -1,25 +1,25 @@
 class Scoutly < Formula
   desc "A fast, lightweight CLI website crawler and SEO analyzer built with Rust."
   homepage "https://github.com/nelsonlaidev/scoutly"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.0/scoutly-aarch64-apple-darwin.tar.xz"
-      sha256 "696ec9b989afbd141d1803e22d2e0cbb9ff181af250508ca8744439906cb38bf"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.1/scoutly-aarch64-apple-darwin.tar.xz"
+      sha256 "e17c9f5affff4d229396f1a4c0ed6b9822c401fd2dc41922c22ce25bbb6f7487"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.0/scoutly-x86_64-apple-darwin.tar.xz"
-      sha256 "54b383fef9c60d17ba8f65f910018d3797e21d5c16a6017d32f217ec9f929770"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.1/scoutly-x86_64-apple-darwin.tar.xz"
+      sha256 "3fcc4c3ebc9831176c9537cfd7a10cdcb78b72435508323b25f93b3923d48412"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.0/scoutly-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7edb3d6b267f4053737288b29cbe6c1093b6695805e32e21b9b572619ab34ee7"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.1/scoutly-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4ad167a10efad6df6af973d765713239ebe91ad81bcd3aa57aa3a1d1b701fa0b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.0/scoutly-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c721fa238f765d4f8b04e205ce3a9ef2962c46ba38b3f13818cc5188f4d8e978"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.1.1/scoutly-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "58486484253bf0b6c907a22e42296f4fe9d6769185a3b538374969a3cb534a02"
     end
   end
   license "MIT"

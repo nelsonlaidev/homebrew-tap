@@ -1,53 +1,37 @@
 class Scoutly < Formula
   desc "A fast, lightweight CLI website crawler and SEO analyzer built with Rust."
   homepage "https://github.com/nelsonlaidev/scoutly"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.2.0/scoutly-aarch64-apple-darwin.tar.xz"
-      sha256 "23a00113df2f880d5f07f26ed0c74bf500240d839a901eac19d665ed4f5b6cc9"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.3.0/scoutly-aarch64-apple-darwin.tar.xz"
+      sha256 "cd8f439cf2c38ca1c7a56df958aace2f69be1257d19cecd298cd292bf123d832"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.2.0/scoutly-x86_64-apple-darwin.tar.xz"
-      sha256 "ad71060b202d0db6c139e52dfd910c79df713e1222198fa25cfb3f0a3eae7b97"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.3.0/scoutly-x86_64-apple-darwin.tar.xz"
+      sha256 "6ff95785aa2c43586eb433c690ccd9daa000385ec8baba41335b97b0ea58bc0f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.2.0/scoutly-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "75d394a4ef871de37e8306ca24a0c1a8a2937c7cc9b937e774fa324e91dd5678"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.3.0/scoutly-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b7a2a084bfa8363c93e49313c2a7e96e92793da70d0bea5821764446f3c86dc0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.2.0/scoutly-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "41e5b571ca2e5c5285004974c2cb14a50912eb61b04f8380a6f97b0f950f7dfa"
+      url "https://github.com/nelsonlaidev/scoutly/releases/download/v0.3.0/scoutly-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e9d41a3f7fb26dfccd9e1f9a895c6865d0b126d274f6e68a5eaa838e288df9c6"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":                   {},
-    "aarch64-unknown-linux-gnu":              {},
-    "aarch64-unknown-linux-musl-dynamic":     {},
-    "aarch64-unknown-linux-musl-static":      {},
-    "arm-unknown-linux-gnueabihf":            {},
-    "arm-unknown-linux-musl-dynamiceabihf":   {},
-    "arm-unknown-linux-musl-staticeabihf":    {},
-    "armv7-unknown-linux-gnueabihf":          {},
-    "armv7-unknown-linux-musl-dynamiceabihf": {},
-    "armv7-unknown-linux-musl-staticeabihf":  {},
-    "i686-pc-windows-gnu":                    {},
-    "i686-unknown-linux-gnu":                 {},
-    "i686-unknown-linux-musl-dynamic":        {},
-    "i686-unknown-linux-musl-static":         {},
-    "powerpc64-unknown-linux-gnu":            {},
-    "powerpc64le-unknown-linux-gnu":          {},
-    "riscv64gc-unknown-linux-gnu":            {},
-    "s390x-unknown-linux-gnu":                {},
-    "x86_64-apple-darwin":                    {},
-    "x86_64-pc-windows-gnu":                  {},
-    "x86_64-unknown-linux-gnu":               {},
-    "x86_64-unknown-linux-musl-dynamic":      {},
-    "x86_64-unknown-linux-musl-static":       {},
+    "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
+    "x86_64-unknown-linux-gnu":          {},
+    "x86_64-unknown-linux-musl-dynamic": {},
+    "x86_64-unknown-linux-musl-static":  {},
   }.freeze
 
   def target_triple

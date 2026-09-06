@@ -4,13 +4,23 @@ This is a custom [Homebrew](https://brew.sh/) tap repository for [@nelsonlaidev]
 
 ## Installation
 
-```
-brew tap nelsonlaidev/tap
-brew install <FORMULA>
+Install the latest stable release:
+
+```sh
+brew install nelsonlaidev/tap/scoutly
 ```
 
-## Formulae
+Install the latest prerelease through the opt-in beta channel:
 
-| Repository                                         | Formula                         | Description                                                              |
-| -------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------ |
-| [scoutly](https://github.com/nelsonlaidev/scoutly) | [scoutly](./Formula/scoutly.rb) | A fast, lightweight CLI website crawler and SEO analyzer built with Rust |
+```sh
+brew install --cask nelsonlaidev/tap/scoutly@beta
+```
+
+Stable installations are never advanced to a prerelease automatically.
+
+## Packages
+
+| Repository                                         | Package                                 | Channel | Description                     |
+| -------------------------------------------------- | --------------------------------------- | ------- | ------------------------------- |
+| [scoutly](https://github.com/nelsonlaidev/scoutly) | [scoutly](./Formula/scoutly.rb)         | Stable  | Fast website auditing CLI       |
+| [scoutly](https://github.com/nelsonlaidev/scoutly) | [scoutly@beta](./Casks/scoutly@beta.rb) | Beta    | Prerelease website auditing CLI |

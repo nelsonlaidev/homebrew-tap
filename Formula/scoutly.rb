@@ -1,5 +1,5 @@
 class Scoutly < Formula
-  desc "A fast, lightweight CLI website crawler and SEO analyzer built with Rust."
+  desc "Fast, lightweight CLI website crawler and SEO analyzer"
   homepage "https://github.com/nelsonlaidev/scoutly"
   version "0.4.0"
   if OS.mac?
